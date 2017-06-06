@@ -1,0 +1,17 @@
+{
+  "name": "socket-rethink-test",
+  "version": "0.1.0",
+  "description": "A simple, proof of concept chat client using socket.io",
+  "main": "server.js",
+  "author": "Adam Crownoble",
+  "private": true,
+  "license": "",
+  "dependencies": {
+    "express": "4.15.3",
+    "rethinkdb": "2.3.3",
+    "socket.io": "2.0.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
