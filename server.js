@@ -5,7 +5,7 @@ var io = require('socket.io')(app);
 var port = 3001;
 var db_name = process.env.RETHINKDB_DB_NAME || 'rethink_socket_test_development';
 
-app.listen(port);
+app.listen(port, '0.0.0.0');
 
 r.connect({db: db_name}).then(function(c) {
   r.table('messages').changes().run(c)
