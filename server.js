@@ -3,7 +3,7 @@ var app = require('http').createServer();
 var io = require('socket.io')(app);
 
 var port = 3001;
-var db_name = 'rethink_socket_test_development';
+var db_name = process.env.RETHINKDB_DB_NAME || 'rethink_socket_test_development';
 
 app.listen(port);
 
